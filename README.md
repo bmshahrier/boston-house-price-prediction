@@ -18,7 +18,7 @@ Your repository should include the following:
 
 ## Research Question
 
-1 sentence description of your research question.
+**What is the best Model for predicting Boston house price?**
 
 ### Abstract
 
