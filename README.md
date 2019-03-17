@@ -60,7 +60,7 @@ The correlation coefficient ranges from -1 to 1. If the value is close to 1, it 
 
 By looking at the correlation matrix we can see that `RM` has a strong positive correlation with `MEDV` (0.7) and `LSTAT` has a high negative correlation with `MEDV` (-0.74).
 
-Finally I created scatter plots to see how features correlate with `MEDV`.
+Finally I created scatter plots to see how features correlate with `MEDV`. I have used the `scatterplot` function from the `seaborn`. library
 ![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/scatter-RM-MEDV-LSTAT-MEDV.png "Scatter Plot")
 From the scatter plots we can see that the `MEDV` or prices increase as the value of `RM` increases linearly. There are few outliers and the data seems to be capped at 50. And the prices tend to decrease with an increase in `LSTAT`. Though it doesn’t look to be following exactly a linear line.
 
