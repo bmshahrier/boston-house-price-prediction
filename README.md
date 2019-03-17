@@ -67,7 +67,7 @@ Finally I created scatter plots to see how features correlate with `MEDV`. I hav
 
 From the scatter plots we can see that the `MEDV` or prices increase as the value of `RM` increases linearly. There are few outliers and the data seems to be capped at 50. And the prices tend to decrease with an increase in `LSTAT`. Though it doesn’t look to be following exactly a linear line.
 
-**Based on the above observations I have choosed `RM` and `LSTAT` as my dependent features.** 
+**Based on the above observations I have choosed `RM` and `LSTAT` as dependent features to predict independent feature `MEDV` or Price.** 
 
 ![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/Regression.png "Regression Plots")
 
