@@ -52,6 +52,7 @@ Brief (2 paragraph) description about your results. Include:
 I have used some visualizations to understand the relationship of the target variable `MEDV` with other features.
 First plot is the distribution of the target variable `MEDV`. I have used the `distplot` function from the `seaborn` library.
 ![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/histMEDV.png "Histogram")
+
 We see that the values of `MEDV` are distributed normally with few outliers.
 
 Next, I have created a correlation matrix that measures the linear relationships between the variables. The correlation matrix is formed by using the `corr` function from the `pandas` dataframe library. I have also used the `heatmap` function from the `seaborn` library to plot the correlation matrix.
@@ -60,11 +61,15 @@ The correlation coefficient ranges from -1 to 1. If the value is close to 1, it 
 
 By looking at the correlation matrix we can see that `RM` has a strong positive correlation with `MEDV` (0.7) and `LSTAT` has a high negative correlation with `MEDV` (-0.74).
 
-Finally I created scatter plots to see how features correlate with `MEDV`. I have used the `scatterplot` function from the `seaborn`. library
+Finally I created scatter plots to see how features correlate with `MEDV`. I have used the `scatterplot` function from the `seaborn` library.
+
 ![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/scatter-RM-MEDV-LSTAT-MEDV.png "Scatter Plot")
+
 From the scatter plots we can see that the `MEDV` or prices increase as the value of `RM` increases linearly. There are few outliers and the data seems to be capped at 50. And the prices tend to decrease with an increase in `LSTAT`. Though it doesn’t look to be following exactly a linear line.
 
 Based on the above observations I have choosed `RM` and `LSTAT` as my dependent features. 
+
+![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/Regression.png "Regression Plots")
 
 
 
