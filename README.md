@@ -39,9 +39,17 @@ I have followed the following steps to get the answer of my research question.
 
 **`Step 1:`** Choose the tool and technology for doing the research.
 
-**`Step 1:`** Choose
+**`Step 2:`** Get the data
 
-**`Step 1:`** Choose
+**`Step 3:`** Process data for analysis
+
+**`Step 4:`** Perform exploratory data analysis
+
+**`Step 5:`** Prepare Training & Test dataset
+
+**`Step 6:`** Create Models for predicting price and perform testing
+
+**`Step 7:`** Measure performance of the Models and choose best Model
 
 Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
 
