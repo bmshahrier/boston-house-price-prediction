@@ -58,7 +58,7 @@ fig = plt.figure(figsize=(12,9))
 plt.grid(axis='y', alpha=0.5)
 ax = sns.distplot(dataset['MEDV'], bins=30, hist_kws=dict(edgecolor="w", linewidth=2))
 ax.set(title = 'Histogram', xlabel='MEDV or Price', ylabel='Frequency')
-plt.savefig("plots/" + "histMEDV.png", dpi=80)
+plt.savefig("plots/" + "histMEDV.png", dpi=70)
 plt.close(fig)
 #Findings: Values of MEDV are distributed normally with few outliers.
 # -----------------------------------------------------------------
@@ -67,7 +67,7 @@ plt.close(fig)
 fig = plt.figure(figsize=(12,9))
 ax = sns.heatmap(dataset.corr(method = "pearson"), annot=True, cmap='coolwarm', linewidth=0.5)
 ax.set(title = 'Pearson Heat Map')
-plt.savefig("plots/" "PearsonHeatMap.png", dpi=80)
+plt.savefig("plots/" "PearsonHeatMap.png", dpi=70)
 plt.close(fig)
 # plt.show()
 # Findings: RM and LSTAT have high correlation with MEDV
@@ -133,7 +133,7 @@ ax = sns.regplot(Y_test, Y_pred, marker = 'o', color = 'green')
 ax.set(title = 'Linear Regrassion: Prices vs Predicted prices', xlabel='MEDV / Prices', ylabel='Predicted Prices')
 # Save the Linear Regrassion Plot along with Error value
 plt.text(30.0, 10.0, err, fontsize=12, bbox=dict(facecolor='green', alpha=0.5))
-plt.savefig("plots/" + "LinearRegression.png", dpi=80)
+plt.savefig("plots/" + "LinearRegression.png", dpi=70)
 plt.close(fig)
 # --------------------------------------------------------------------
 # KNN algorithm Training and Predictions
@@ -170,7 +170,7 @@ ax = sns.regplot(Y_test, Y_pred, marker = 'o', color = 'blue')
 ax.set(title = 'KNN Regrassion: Prices vs Predicted prices', xlabel='MEDV / Prices', ylabel='Predicted Prices')
 # Save the KNN Regrassion Plot along with Error value
 plt.text(30.0, 10.0, err, fontsize=12, bbox=dict(facecolor='blue', alpha=0.5))
-plt.savefig("plots/" + "KNNRegression.png", dpi=80)
+plt.savefig("plots/" + "KNNRegression.png", dpi=70)
 plt.close(fig)
 # -------------------------------------------------------------------
 # Gradient Boosting Tree Regression
@@ -208,7 +208,7 @@ ax = sns.regplot(Y_test, Y_pred, marker = 'o', color = 'r')
 ax.set(title = 'Gradient Boosting Regrassion: Prices vs Predicted prices', xlabel='MEDV / Prices', ylabel='Predicted Prices')
 # Save the KNN Regrassion Plot along with Error value
 plt.text(30.0, 10.0, err, fontsize=12, bbox=dict(facecolor='r', alpha=0.5))
-plt.savefig("plots/" + "GradientBoostingRegression.png", dpi=80)
+plt.savefig("plots/" + "GradientBoostingRegression.png", dpi=70)
 plt.close(fig)
 # ---------------------------------------------------------------
 # Measure Performance of the Model
