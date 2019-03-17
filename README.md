@@ -35,6 +35,14 @@ Brief (no more than 1-2 paragraph) description about the dataset. Can copy from 
 
 ## Methods
 
+I have followed the following steps to get the answer of my research question.
+
+**`Step 1:`** Choose the tool and technology for doing the research.
+
+**`Step 1:`** Choose
+
+**`Step 1:`** Choose
+
 Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
 
 - pseudocode for this method (either created by you or cited from somewhere else)
