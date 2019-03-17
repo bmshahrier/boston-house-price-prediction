@@ -6,7 +6,7 @@
 
 -----
 
-### Resources
+## Resources
 Your repository should include the following:
 
 - Python script for your analysis
@@ -18,9 +18,9 @@ Your repository should include the following:
 
 ## Research Question
 
-**What is the best Model for predicting Boston house price?**
+**What is the best Model for predicting Boston house prices?**
 
-### Abstract
+## Abstract
 
 4 sentence longer explanation about your research question. Include:
 
@@ -29,18 +29,18 @@ Your repository should include the following:
 - action (how will we try to solve this problem/answer this question)
 - resolution (what did we end up producing)
 
-### Introduction
+## Introduction
 
 Brief (no more than 1-2 paragraph) description about the dataset. Can copy from elsewhere, but cite the source (i.e. at least link, and explicitly say if it's copied from elsewhere).
 
-### Methods
+## Methods
 
 Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
 
 - pseudocode for this method (either created by you or cited from somewhere else)
 - why you chose this method
 
-### Results
+## Results
 
 Brief (2 paragraph) description about your results. Include:
 
@@ -48,7 +48,7 @@ Brief (2 paragraph) description about your results. Include:
 - At least 1 "value" that summarizes either your data or the "performance" of your method
 - A short explanation of both of the above
 
-## Exploratory Data Analysis
+### Exploratory Data Analysis
 I have used some visualizations to understand the relationship of the target variable `MEDV` with other features.
 First plot is the distribution of the target variable `MEDV`. I have used the `distplot` function from the `seaborn` library.
 ![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/histMEDV.png "Histogram")
@@ -69,17 +69,20 @@ From the scatter plots we can see that the `MEDV` or prices increase as the valu
 
 **Based on the above observations I have choosed `RM` and `LSTAT` as dependent features to predict independent feature `MEDV` or Price.** 
 
+### Model Creation and Testing
+
 ![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/Regression.png "Regression Plots")
 
+### Model Performance
 
 
-### Discussion
+## Discussion
 Brief (no more than 1-2 paragraph) description about what you did. Include:
 
 - interpretation of whether your method "solved" the problem
 - suggested next step that could make it better.
 
-### References
+## References
 All of the links
 
 -------
