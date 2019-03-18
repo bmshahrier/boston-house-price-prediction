@@ -65,7 +65,9 @@ First plot is the distribution of the target variable `MEDV`. I have used the `d
 We see that the values of `MEDV` are distributed normally with few outliers.
 
 Next, I have created a correlation matrix that measures the linear relationships between the variables. The correlation matrix is formed by using the `corr` function from the `pandas` dataframe library. I have also used the `heatmap` function from the `seaborn` library to plot the correlation matrix.
+
 ![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/PearsonHeatMap.png "Pearson Heat Map")
+
 The correlation coefficient ranges from -1 to 1. If the value is close to 1, it means that there is a strong positive correlation between the two variables. When it is close to -1, the variables have a strong negative correlation.
 
 By looking at the correlation matrix we can see that `RM` has a strong positive correlation with `MEDV` (0.7) and `LSTAT` has a high negative correlation with `MEDV` (-0.74).
@@ -76,7 +78,7 @@ Finally I have created scatter plots to see correlate among `MEDV`, `RM` and `LS
 
 From the scatter plots we can see that the `MEDV` or prices increase as the value of `RM` increases linearly. There are few outliers and the data seems to be capped at 50. And the prices tend to decrease with an increase in `LSTAT`.
 
-**Based on the above observations I have choosed `RM` and `LSTAT` as independent features to predict dependent feature `MEDV` or Price.** 
+**Based on the above observations I have taken independent feature `RM` and `LSTAT` to predict dependent feature `MEDV` or Price.** 
 
 ### Model Creation and Testing
 
