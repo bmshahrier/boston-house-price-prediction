@@ -54,7 +54,7 @@ if not os.path.exists('plots'):
 # --------------------------------------------------------------
 # Visualize Histogram Plot for 'target' feature that is MEDV
 # Create and save Histogram
-fig = plt.figure(figsize=(12,9))
+fig = plt.figure(figsize=(10,7.5))
 plt.grid(axis='y', alpha=0.5)
 ax = sns.distplot(dataset['MEDV'], bins=30, hist_kws=dict(edgecolor="w", linewidth=2))
 ax.set_title('Histogram', fontsize=20)
@@ -66,7 +66,7 @@ plt.close(fig)
 # -----------------------------------------------------------------
 # Visualize Heatmap of the Dataset
 # Create and save Heatmap
-fig = plt.figure(figsize=(12,9))
+fig = plt.figure(figsize=(10,7.5))
 ax = sns.heatmap(dataset.corr(method = "pearson"), annot=True, cmap='coolwarm', linewidth=0.5)
 ax.set_title('Pearson Heat Map', fontsize=20)
 plt.savefig("plots/" "PearsonHeatMap.png", dpi=70)
@@ -78,7 +78,7 @@ plt.close(fig)
 column = len(dataset.columns)
 
 for x in range(column-1):
-    fig = plt.figure(figsize=(12,9))
+    fig = plt.figure(figsize=(10,7.5))
     ax = sns.scatterplot(dataset.iloc[:,x], dataset['MEDV'], edgecolors='w', alpha=0.7)
     ax.set_title('Scatter Plot', fontsize=20)
     ax.set_xlabel(str(dataset.columns[x]), fontsize=20)
@@ -134,7 +134,7 @@ print(err)
 
 fig = plt.figure(figsize=(12,9))
 ax = sns.regplot(Y_test, Y_pred, marker = 'o', color = 'green')
-ax.set_title('Linear Regrassion: Prices vs Predicted prices', fontsize=20)
+ax.set_title('Linear Regrassion', fontsize=20)
 ax.set_xlabel('MEDV or Price', fontsize=20)
 ax.set_ylabel('Predicted Prices', fontsize=20)
 # Save the Linear Regrassion Plot along with Error value
@@ -173,7 +173,7 @@ print(err)
 # Create Regression Plot for Test and Prediction values
 fig = plt.figure(figsize=(12,9))
 ax = sns.regplot(Y_test, Y_pred, marker = 'o', color = 'blue')
-ax.set_title('KNN Regrassion: Prices vs Predicted prices', fontsize=20)
+ax.set_title('KNN Regrassion', fontsize=20)
 ax.set_xlabel('MEDV or Price', fontsize=20)
 ax.set_ylabel('Predicted Prices', fontsize=20)
 # Save the KNN Regrassion Plot along with Error value
@@ -213,7 +213,7 @@ print(err)
 
 fig = plt.figure(figsize=(12,9))
 ax = sns.regplot(Y_test, Y_pred, marker = 'o', color = 'r')
-ax.set_title('Gradient Boosting Regrassion: Prices vs Predicted prices', fontsize=20)
+ax.set_title('Gradient Boosting Regrassion', fontsize=20)
 ax.set_xlabel('MEDV or Price', fontsize=20)
 ax.set_ylabel('Predicted Prices', fontsize=20)
 # Save the KNN Regrassion Plot along with Error value
