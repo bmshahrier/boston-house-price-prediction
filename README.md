@@ -7,9 +7,8 @@
 -----
 
 ## Resources
-Your repository should include the following:
 
-- Python script for your analysis
+- Python script for analysis
 - Results figure/saved file
 - Dockerfile for your experiment
 - runtime-instructions in a file named RUNME.md
@@ -35,7 +34,7 @@ Brief (no more than 1-2 paragraph) description about the dataset. Can copy from 
 
 ## Methods
 
-I have followed the following steps to get the answer of my research question.
+Following steps have been performed to get the answer of my research question.
 
 **`Step 1:`** Choose the tool and technology for doing the research.
 
@@ -58,13 +57,7 @@ Brief (no more than 1-2 paragraph) description about how you decided to approach
 
 ## Results
 
-Brief (2 paragraph) description about your results. Include:
-
-- At least 1 figure
-- At least 1 "value" that summarizes either your data or the "performance" of your method
-- A short explanation of both of the above
-
-### Exploratory Data Analysis
+### Exploratory Data Analysis (EDA)
 I have used some visualizations to understand the relationship of the target variable `MEDV` with other features.
 First plot is the distribution of the target variable `MEDV`. I have used the `distplot` function from the `seaborn` library.
 ![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/histMEDV.png "Histogram")
@@ -77,7 +70,7 @@ The correlation coefficient ranges from -1 to 1. If the value is close to 1, it 
 
 By looking at the correlation matrix we can see that `RM` has a strong positive correlation with `MEDV` (0.7) and `LSTAT` has a high negative correlation with `MEDV` (-0.74).
 
-Finally I created scatter plots to see how features correlate with `MEDV`. I have used the `scatterplot` function from the `seaborn` library.
+Finally I have created scatter plots to see correlate among `MEDV`, `RM` and `LSTAT`. I have used the `scatterplot` function from the `seaborn` library.
 
 ![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/scatter-RM-MEDV-LSTAT-MEDV.png "Scatter Plot")
 
