@@ -8,10 +8,10 @@
 
 ## Resources
 
-- Python script for analysis
-- Results figure/saved file
-- Dockerfile for your experiment
-- runtime-instructions in a file named RUNME.md
+- Python script `boston_houseing.py` for analysis
+- Results figure saved in `plots` folder
+- `Dockerfile` for running the script in any operating system
+- `RUNME.md` for guiding to run the python script
 
 -----
 
@@ -30,7 +30,27 @@
 
 ## Introduction
 
-Brief (no more than 1-2 paragraph) description about the dataset. Can copy from elsewhere, but cite the source (i.e. at least link, and explicitly say if it's copied from elsewhere).
+Boston House Prices Dataset (Source: https://scikit-learn.org/stable/datasets/index.html#toy-datasets) is used for the research.
+
+This data was collected in 1978 and has 506 entries with 14 attributes or features for homes from various suburbs in Boston.
+
+```
+Boston Housing Dataset Attribute Information (in order):
+        - CRIM     per capita crime rate by town
+        - ZN       proportion of residential land zoned for lots over 25,000 sq.ft.
+        - INDUS    proportion of non-retail business acres per town
+        - CHAS     Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)
+        - NOX      nitric oxides concentration (parts per 10 million)
+        - RM       average number of rooms per dwelling
+        - AGE      proportion of owner-occupied units built prior to 1940
+        - DIS      weighted distances to five Boston employment centres
+        - RAD      index of accessibility to radial highways
+        - TAX      full-value property-tax rate per $10,000
+        - PTRATIO  pupil-teacher ratio by town
+        - B        1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town
+        - LSTAT    % lower status of the population
+        - MEDV     Median value of owner-occupied homes in $1000's
+```
 
 ## Methods
 
@@ -78,7 +98,7 @@ Finally I have created scatter plots to see correlate among `MEDV`, `RM` and `LS
 
 From the scatter plots we can see that the `MEDV` or prices increase as the value of `RM` increases linearly. There are few outliers and the data seems to be capped at 50. And the prices tend to decrease with an increase in `LSTAT`.
 
-**Based on the above observations I have taken independent feature `RM` and `LSTAT` to predict dependent feature `MEDV` or Price.** 
+>**Based on the above observations I have taken independent feature `RM` and `LSTAT` to predict dependent feature `MEDV` or Price.** 
 
 ### Model Creation and Testing
 
