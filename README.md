@@ -98,7 +98,7 @@ Finally I have created scatter plots to see correlate among `MEDV`, `RM` and `LS
 
 From the scatter plots we can see that the `MEDV` or prices increase as the value of `RM` increases linearly. There are few outliers and the data seems to be capped at 50. And the prices tend to decrease with an increase in `LSTAT`.
 
->**Based on the above observations I have taken independent feature `RM` and `LSTAT` to predict dependent feature `MEDV` or Price.** 
+>Based on the above observations I have taken independent feature `RM` and `LSTAT` to predict dependent feature `MEDV` or Price. 
 
 ### Model Creation and Testing
 
