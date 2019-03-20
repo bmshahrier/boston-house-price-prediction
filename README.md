@@ -102,10 +102,18 @@ From the scatter plots we can see that the `MEDV` or prices increase as the valu
 
 ### Model Creation and Testing
 
+I have created three models with following regressors and evaluate the `Mean Squared Error (MAE)` and `Mean Accuracy Error (MAE)` of each of them with train-test (80-20) dataset.
+- Linear Regression
+- KNN Regression
+- Gradient Boosting Regression
+
 ![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/Regression.png "Regression Plots")
+
+In the figure we can see that `Gradient Boosting Model` has the lowest MSE and MAE among three models. 
 
 ### Model Performance
 
+There after I have compared the Models evaluating the Mean Accuracy of each of them by a stratified `kfold cross validation` procedure.
 
 ## Discussion
 Brief (no more than 1-2 paragraph) description about what you did. Include:
