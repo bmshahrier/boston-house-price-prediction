@@ -109,13 +109,14 @@ I have created three models with following regressors and evaluate the `Mean Squ
 
 ![alt text](https://github.com/bmshahrier/boston-house-price-prediction/blob/master/plots/Regression.png "Regression Plots")
 
-In the figure we can see that `Gradient Boosting Model` has the lowest MSE and MAE among three models. 
+In the figure we can see that `Gradient Boosting Model` has the lowest MSE (28.06) and MAE (3.15) among three models. 
 
 ### Model Performance
 
-There after I have compared the Models evaluating the Mean Accuracy of each of them by a stratified `kfold cross validation` procedure.
+There after I have evaluated the Models using `Kfold Cross Validation` procedure.
 
 ## Discussion
+
 Brief (no more than 1-2 paragraph) description about what you did. Include:
 
 - interpretation of whether your method "solved" the problem
