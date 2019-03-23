@@ -21,12 +21,10 @@
 
 ## Abstract
 
-4 sentence longer explanation about your research question. Include:
-
-- opportunity (what data do we have)
-- challenge (what is the "problem" we could solve with this dataset)
-- action (how will we try to solve this problem/answer this question)
-- resolution (what did we end up producing)
+- Opportunity: Data was collected from a real survay
+- Challenge: Data was collected in 1078, only 506 entries and 14 features
+- Action: Statistical analysis and Machine Learning models will be utilized to get the answer
+- Resolution: I will find the best ML model to predict the house prices
 
 ## Introduction
 
@@ -62,7 +60,7 @@ Following steps have been performed to get the answer of my research question.
 
 **`Step 3:`** Process data for analysis
 
-**`Step 4:`** Perform exploratory data analysis
+**`Step 4:`** Perform exploratory data analysis and find the important variables
 
 **`Step 5:`** Prepare Training & Test dataset
 
@@ -121,14 +119,13 @@ Kfold =  3 , MAE  0.43
 Kfold =  4 , MAE  0.46
 Kfold =  5 , MAE  0.49
 ```
->We can see kfold 3 got the best result. 
+> We can see kfold 3 (33.33% test data) got the best result. 
 
 ## Discussion
 
-Brief (no more than 1-2 paragraph) description about what you did. Include:
+Three ML models are used to get my research answer. Out of those models the best model found using cross-validation technique. But outliers were not handled to developed the models. 
 
-- interpretation of whether your method "solved" the problem
-- suggested next step that could make it better.
+Next step will be to handale the outliers and experiement with more ML models and validation techniques to get the better results.
 
 ## References
 All of the links
