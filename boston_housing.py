@@ -128,9 +128,8 @@ mse = mean_squared_error(Y_test, Y_pred)
 from sklearn.metrics import mean_absolute_error
 mae = mean_absolute_error(Y_test, Y_pred)
 
-print("Model Performance:")
 err = "MSE: " + str(round(mse, 2)) + "," + " MAE: " + str(round(mae, 2))
-print(err)
+print("Linear Regression Model Performance:-- ", err)
 
 fig = plt.figure(figsize=(12,9))
 ax = sns.regplot(Y_test, Y_pred, marker = 'o', color = 'green')
@@ -166,9 +165,8 @@ mse = mean_squared_error(Y_test, Y_pred)
 from sklearn.metrics import mean_absolute_error
 mae = mean_absolute_error(Y_test, Y_pred)
 
-print("Model Performance:")
 err = "MSE: " + str(round(mse, 2)) + "," + " MAE: " + str(round(mae, 2))
-print(err)
+print("KNN Regresson Model Performance:-- ", err)
 
 # Create Regression Plot for Test and Prediction values
 fig = plt.figure(figsize=(12,9))
@@ -207,9 +205,8 @@ mse = mean_squared_error(Y_test, Y_pred)
 from sklearn.metrics import mean_absolute_error
 mae = mean_absolute_error(Y_test, Y_pred)
 
-print("Model Performance:")
 err = "MSE: " + str(round(mse, 2)) + "," + " MAE: " + str(round(mae, 2))
-print(err)
+print("Gradient Boosting Regrassion Model Performance:-- ", err)
 
 fig = plt.figure(figsize=(12,9))
 ax = sns.regplot(Y_test, Y_pred, marker = 'o', color = 'r')
@@ -221,4 +218,37 @@ plt.text(35.0, 10.0, err, fontsize=20, bbox=dict(facecolor='r', alpha=0.5))
 plt.savefig("plots/" + "GradientBoostingRegression.png", dpi=70)
 plt.close(fig)
 # ---------------------------------------------------------------
-# Measure Performance of the Model
+# Model Validation
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import KFold
+# Cross validate model with Kfold stratified cross val
+# fold = KFold(n_splits=10, shuffle=True, random_state = 2)
+# print(fold)
+
+# Modeling step Test differents algorithms
+# random_state = 2
+# regressors = []
+# regressors.append(LinearRegression())
+# regressors.append(KNeighborsRegressor())
+# regressors.append(GradientBoostingRegressor())
+
+print("Gradient Boost Regression Cross Validation with KFold:")
+kfolds = [2, 3, 4, 5]
+for kfold in kfolds :
+    cv_results = cross_val_score(gbr, X, Y, cv = KFold(kfold, random_state = 0))
+        # print(cv_results)
+    # print(cv_results.mean())
+    print("Kfold = ", kfold, ", MAE ", round(cv_results.mean(), 2))
+
+# regressors = [lr, knr, gbr]
+# kfolds = [2, 3, 4, 5]
+# for kfold in kfolds :
+#     print ("Kfold ", kfold)
+#     for regressor in regressors :
+#         cv_results = (cross_val_score(regressor, X, Y, cv = KFold(kfold, random_state = 0)))
+#         if regressor == lr :
+#             print("Linear Regression, MAE: ", cv_results.mean())
+#         elif regressor == knr:
+#             print("KNN Regression, MAE: ", cv_results.mean())
+#         else:
+#             print("Gradient Boost Regression, , MAE: ", cv_results.mean())
