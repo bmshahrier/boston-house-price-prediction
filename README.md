@@ -68,11 +68,6 @@ Following steps have been performed to get the answer of my research question.
 
 **`Step 7:`** Measure performance of the Models and choose best Model
 
-Brief (no more than 1-2 paragraph) description about how you decided to approach solving it. Include:
-
-- pseudocode for this method (either created by you or cited from somewhere else)
-- why you chose this method
-
 ## Results
 
 ### Exploratory Data Analysis (EDA)
