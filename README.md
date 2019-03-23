@@ -102,7 +102,7 @@ From the scatter plots we can see that the `MEDV` or prices increase as the valu
 
 ### Model Creation and Testing
 
-I have created three models with following regressors and evaluate the `Mean Squared Error (MAE)` and `Mean Accuracy Error (MAE)` of each of them with train-test (80-20) dataset.
+I have created three models with following regressors and evaluate the `Mean Squared Error (MAE)` and `Mean Accuracy Error (MAE)` of each of them with train-test split (80-20) dataset.
 - Linear Regression
 - KNN Regression
 - Gradient Boosting Regression
@@ -111,9 +111,17 @@ I have created three models with following regressors and evaluate the `Mean Squ
 
 In the figure we can see that `Gradient Boosting Model` has the lowest MSE (28.06) and MAE (3.15) among three models. 
 
-### Model Performance
+### Model Validation
 
-There after I have evaluated the Models using `Kfold Cross Validation` procedure.
+Thereafter I have evaluated the Gradient Boost Model using `Kfold Cross Validation` procedure. This the result for KFold 2, 3, 4 & 5.
+
+```
+Kfold =  2 , MAE  0.64
+Kfold =  3 , MAE  0.43
+Kfold =  4 , MAE  0.46
+Kfold =  5 , MAE  0.49
+```
+>We can see kfold 3 got the best result. 
 
 ## Discussion
 
